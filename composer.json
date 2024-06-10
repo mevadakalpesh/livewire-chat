@@ -1,0 +1,33 @@
+{
+    "name": "mevadakalpesh/chatapp",
+    "description": "Empower your Laravel applications with real-time chat functionality using mevadakalpesh/chatapp. A seamless and customizable solution for enhancing user communication.",
+    "type": "library",
+    "keywords": ["laravel", "chat"],
+    "autoload": {
+        "psr-4": {
+            "Mevadakalpesh\\Chatapp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mevadakalpesh",
+            "email": "mevadakalpesh23@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "beyondcode/laravel-websockets": "^1.14",
+        "livewire/livewire": "^3.0",
+        "livewire/volt": "^1.0",
+        "pusher/pusher-php-server": "^7.2"
+    },
+
+    "extra": {
+        "laravel" : {
+            "providers": [
+                "Mevadakalpesh\\Chatapp\\ChatAppServiceProvider"
+            ]
+        }
+    }
+}
